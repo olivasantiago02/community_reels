@@ -9,10 +9,12 @@ body{
 }
 
 .bienvenida {
-    height: 500px; /* Ajusta la altura según tus necesidades */
+    height: 600px; /* Ajusta la altura según tus necesidades */
     opacity: 0;
     transition: opacity 0.9s ease-in-out;
+    margin-bottom: 50px; /* Ajusta el margen inferior */
   }
+  
   
   .titulo-bienvenida {
     font-size: 3em; /* Ajusta el tamaño del título según tus necesidades */
@@ -41,4 +43,47 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+ /* Footer */
+ footer {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 30px 0;
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  footer img {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+
+  .redes-sociales a {
+    font-size: 14px; /* Ajusta el tamaño de la fuente para los enlaces */
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .redes-sociales img {
+    max-width: 30px; /* Ajusta el tamaño máximo de la imagen */
+    height: auto;
+  }
+  
+  @media screen and (max-width: 767px) {
+    /* Estilos específicos para pantallas más pequeñas, como dispositivos móviles */
+  
+    .bienvenida {
+      height: auto; /* Ajusta la altura automáticamente en dispositivos móviles */
+      margin-bottom: 20px; /* Margen inferior más pequeño */
+    }
+  
+    .footer {
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
   }
