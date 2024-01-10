@@ -6,3 +6,38 @@ body{
 .container {
     background-color: #ffffff; /* Código hexadecimal para blanco puro */
 }
+
+.bienvenida {
+    height: 500px; /* Ajusta la altura según tus necesidades */
+    opacity: 0;
+    transition: opacity 0.9s ease-in-out;
+  }
+  
+  .titulo-bienvenida {
+    font-size: 3em; /* Ajusta el tamaño del título según tus necesidades */
+    text-align: center;
+    margin-top: 200px; /* Ajusta el espacio superior según tus necesidades */
+    margin-bottom: 100px;
+  }
+
+  .card {
+    margin-top: 20px;
+    padding: 30px;
+    max-width: 600px;
+    max-height: 500px;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out; /* Ajusta el tiempo de transición de las cards */
+    border: 1px solid #ddd; /* Borde de la card */
+    border-radius: 10px; /* Bordes redondeados */
+  }
+  
+  .card-body {
+    text-align: center; /* Centrar el contenido dentro de la card-body */
+  }
+
+  .card img{
+    max-width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
