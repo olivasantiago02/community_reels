@@ -11,7 +11,7 @@ body{
 .bienvenida {
     height: 600px; /* Ajusta la altura según tus necesidades */
     opacity: 0;
-    transition: opacity 0.9s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
     margin-bottom: 50px; /* Ajusta el margen inferior */
   }
   
@@ -44,6 +44,99 @@ body{
     justify-content: center;
     align-items: center;
   }
+
+  /* Estilos para los controles del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black; /* Cambia el color de fondo a negro */
+  border: 5px solid black; /* Añade un borde negro al icono */
+}
+
+/* Estilos adicionales para el color del texto en dispositivos de escritorio */
+.carousel-control-prev, .carousel-control-next {
+  color: black; /* Cambia el color del texto a negro */
+}
+
+.edicion-video {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto blanco */
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .content {
+    opacity: 0;
+    animation: fadeIn 2s forwards; /* Animación de entrada lenta de 2 segundos */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .proceso-edicion {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .proceso-item {
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .proceso-item i {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .herramientas-seccion {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .titulo-herramientas {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .herramientas-iconos {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .herramienta {
+    margin: 0 15px;
+  }
+  
+  .herramienta img {
+    width: 90px; /* Ajusta el tamaño según tus necesidades */
+    height: 90px; /* Ajusta el tamaño según tus necesidades */
+    border-radius: 20%;
+    display: block;
+    margin: 0 auto;
+  }
+
 
  /* Footer */
  footer {
@@ -80,7 +173,6 @@ body{
       height: auto; /* Ajusta la altura automáticamente en dispositivos móviles */
       margin-bottom: 20px; /* Margen inferior más pequeño */
     }
-  
     .footer {
       position: relative;
       bottom: 0;
