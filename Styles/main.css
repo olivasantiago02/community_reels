@@ -1,0 +1,8 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+/* Personaliza el color del fondo del header */
+.container {
+    background-color: #ffffff; /* Código hexadecimal para blanco puro */
+}
