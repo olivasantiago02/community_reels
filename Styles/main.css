@@ -9,6 +9,48 @@ body{
     max-width: 100%;
 }
 
+.navbar button{
+  margin-right: 30px;
+}
+
+/* Estilos para los enlaces en la barra de navegación */
+.navbar-nav {
+  text-align: center; /* Centra los enlaces dentro del contenedor */
+}
+
+.navbar-nav .nav-item {
+  margin-right: 15px; /* Ajusta el espacio entre los elementos de navegación */
+}
+
+.navbar-nav .nav-link {
+  font-size: 18px; /* Ajusta el tamaño de la fuente */
+  color: #000; /* Cambia el color del texto */
+}
+
+/* Estilos para los enlaces desplegables */
+.navbar-nav .dropdown-menu {
+  text-align: center; /* Centra los enlaces desplegables */
+}
+
+.navbar-nav .dropdown-item {
+  font-size: 16px; /* Ajusta el tamaño de la fuente en los enlaces desplegables */
+  color: #000; /* Cambia el color del texto en los enlaces desplegables */
+}
+
+/* Estilos para el botón de llamada a la acción (CTA) */
+.btn-outline-primary {
+  text-align: center;
+  font-size: 18px; /* Ajusta el tamaño de la fuente del botón CTA */
+  color: #000; /* Cambia el color del texto del botón CTA */
+  border-color: #000; /* Cambia el color del borde del botón CTA */
+}
+
+/* Estilo adicional para resaltar el botón activo */
+.navbar-nav .nav-item.active .nav-link {
+  font-weight: bold; /* Puedes agregar negrita al enlace activo */
+}
+
+
 .bienvenida {
     height: 600px; /* Ajusta la altura según tus necesidades */
     opacity: 0;
@@ -188,22 +230,31 @@ body{
     margin-bottom: 20px;
   }
 
-  .redes-sociales a {
-    font-size: 14px; /* Ajusta el tamaño de la fuente para los enlaces */
-    display: flex;
-    margin-bottom: 20px;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
+  footer p img {
+    width: 30px; /* Ajusta el tamaño de las imágenes según tus necesidades */
+    height: 30px; /* Ajusta el tamaño de las imágenes según tus necesidades */
+    border-radius: 50%; /* Puedes agregar bordes redondos a las imágenes */
+    margin-right: 5px; /* Ajusta el margen entre la imagen y el texto del enlace */
   }
-  
-  .redes-sociales img {
-    max-width: 30px; /* Ajusta el tamaño máximo de la imagen */
-    height: auto;
+
+  .redes-sociales a {
+    display: inline-block;
+    margin-right: 10px; /* Ajusta el margen entre los íconos */
+  }
+
+  .redes-sociales a img {
+    width: 30px; /* Ajusta el tamaño de las imágenes según tus necesidades */
+    height: 30px; /* Ajusta el tamaño de las imágenes según tus necesidades */
+    border-radius: 50%; /* Puedes agregar bordes redondos a las imágenes */
+    margin-right: 5px; /* Ajusta el margen entre la imagen y el texto del enlace */
   }
   
   @media screen and (max-width: 767px) {
     /* Estilos específicos para pantallas más pequeñas, como dispositivos móviles */
+    body{
+      margin: 0;
+      padding: 0;
+    }
   
     .bienvenida {
       height: auto; /* Ajusta la altura automáticamente en dispositivos móviles */
